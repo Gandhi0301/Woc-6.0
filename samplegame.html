@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play!!!</title>
+    <link rel="stylesheet" href="c_j.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="sampleclient.js"></script>
+</head>
+<body>
+    <div class="gbody">
+        <div class="col1">
+            <div class="box1_1">
+                <!-- <div class="name">
+                <i class="fa-regular fa-user"></i>
+                <p>User 1</p>
+                </div>
+                <i class="fa-solid fa-xmark"></i> -->
+            </div>
+            <div class="box1_2">
+                <button type="button">Start</button>;
+            </div>
+            <div class="box1_3">
+                <button type="button">Room ID:</button>;
+            </div>
+            <div class="box1_4">
+                <button type="button">Leave</button>;
+            </div>
+        </div>
+
+        <div class="col2">
+            <div class="box2_1">
+
+            </div>
+            <div class="box2_2">
+
+            </div>
+            <div class="box2_3">
+                <div class="selector">
+                    <label for="favcolor">Brush color:</label>
+                    <input type="color" id="favcolor" value="#fff">
+                    <button type="button">Clear</button>
+                </div>
+                <p>Brush Size:</p>
+                <div class="slider">
+                    <input type="range" min="1" max="100">
+                </div>
+            </div>
+        </div>
+
+        <div class="col3">
+            <div class="box3_1">
+                <div class="chat">
+
+                </div>
+                <div class="options">
+                    <!-- <input type="text" placeholder="Type the messege">
+                    <button>Send</button> -->
+                    <form class="send-container">
+                        <input type="text" id="message-input">
+                        <button type="submit" id="send-button">Send</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

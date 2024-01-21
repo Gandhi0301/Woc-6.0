@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictionary</title>
+    <link rel="stylesheet" href="c_j.css">
+</head>
+<body>
+    <div class="body">
+        <div class="heading">
+            <p>Pictionary - Play With Friends</p>
+        </div>
+        <div class="forbox">
+        <div class="createBox">
+            <div class="crheading">
+                <p>Create Room:</p>
+            </div>
+            <div class="crinput">
+                <input placeholder="Enter your Username " >
+            </div>
+            <div class="crbutton">
+                <button type="button">Create</button>
+            </div>
+        </div>
+        </div>
+        <div class="forbox2">
+        <div class="joinBox">
+            <div class="jrheading">
+                <p>Join Room:</p>
+            </div>
+            <div class="jrinput1">
+                <input placeholder="Enter your username">
+            </div>
+            <div class="jrinput2">
+                <input placeholder="Enter the room ID">
+            </div>
+            <div class="jrbutton">
+                <button type="button">Join</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        const crusername= document.querySelector(".crinput input");
+        const createbut= document.querySelector(".crbutton button");
+        createbut.addEventListener("click",()=>{
+            const crtext= document.querySelector('.crinput input').value;
+            if(crtext!=''){window.open('./game.html');}
+            else{
+                alert("Please enter a username");
+            } ;
+        });
+
+        const jusername= document.querySelector(".jrinput1 input");
+        const jbut= document.querySelector(".jrbutton button");
+        const jroom= document.querySelector(".jrinput2 input");
+        jbut.addEventListener("click",()=>{
+            const juname= document.querySelector('.jrinput1 input').value;
+            const jroom= document.querySelector('.jrinput2 input').value;
+            if(juname!='' && jroom!=''){window.open('./game.html');}
+            else{alert("Please enter a username And a room ID");}
+        });
+
+    </script>
+    
+</body>
+</html>
